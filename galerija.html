@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerija - Pizzeria Castellier</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Lightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navigacija -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Pizzeria Castellier Logo" width="150" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="o-nama.html">O nama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meni.html">Meni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galerija.html">Galerija</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontaktirajte-nas.html">Kontaktirajte nas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Zaglavlje galerije -->
+  <section id="galerija-header" class="py-5 mt-5">
+    <div class="container">
+      <h2 class="text-center display-5 mb-4">Galerija</h2>
+      <div class="divider-custom mx-auto mb-5">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">📷</div>
+        <div class="divider-custom-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kategorije galerije -->
+  <section id="galerija-kategorije" class="pb-3">
+    <div class="container">
+      <div class="text-center mb-4">
+        <div class="btn-group" role="group" aria-label="Kategorije galerije">
+          <button type="button" class="btn btn-outline-primary active" data-filter="*">Sve</button>
+          <button type="button" class="btn btn-outline-primary" data-filter=".hrana">Hrana</button>
+          <button type="button" class="btn btn-outline-primary" data-filter=".restoran">Restoran</button>
+          <button type="button" class="btn btn-outline-primary" data-filter=".dogadjaji">Događaji</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerija slika -->
+  <section id="galerija-slike" class="pb-5">
+    <div class="container">
+      <div class="row gallery" id="gallery">
+        <!-- Hrana -->
+        <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+          <a href="images/pizza_margherita.jpeg" data-lightbox="galerija" data-title="Pizza Margherita">
+            <img src="images/pizza_margherita.jpeg" class="img-fluid rounded shadow-sm" alt="Pizza Margherita">
+            <div class="gallery-overlay">
+              <h5>Pizza Margherita</h5>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+          <a href="images/pizza_gramperi.jpeg" data-lightbox="galerija" data-title="Pizza Gramperi - naš specijalitet">
+            <img src="images/pizza_gramperi.jpeg" class="img-fluid rounded shadow-sm" alt="Pizza Gramperi">
+            <div class="gallery-overlay">
+              <h5>Pizza Gramperi</h5>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+          <a href="images/pizza_quattro_formaggi.jpeg" data-lightbox="galerija" data-title="Pizza Quattro Formaggi">
+            <img src="images/pizza_quattro_formaggi.jpeg" class="img-fluid rounded shadow-sm" alt="Pizza Quattro Formaggi">
+            <div class="gallery-overlay">
+              <h5>Pizza Quattro Formaggi</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/pizza_capricciosa.jpeg" data-lightbox="galerija" data-title="Pizza Capricciosa">
+              <img src="images/pizza_capricciosa.jpeg" class="img-fluid rounded shadow-sm" alt="Pizza Capricciosa">
+              <div class="gallery-overlay">
+                <h5>Pizza Capricciosa</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/pizza_diavola.jpeg" data-lightbox="galerija" data-title="Pizza Diavola">
+              <img src="images/pizza_diavola.jpeg" class="img-fluid rounded shadow-sm" alt="Pizza Diavola">
+              <div class="gallery-overlay">
+                <h5>Pizza Diavola</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/pizza_funghi.jpeg" data-lightbox="galerija" data-title="Pizza Funghi">
+              <img src="images/pizza_funghi.jpeg" class="img-fluid rounded shadow-sm" alt="Pizza Funghi">
+              <div class="gallery-overlay">
+                <h5>Pizza Funghi</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/pizza_marinara.jpeg" data-lightbox="galerija" data-title="Pizza Marinara">
+              <img src="images/pizza_marinara.jpeg" class="img-fluid rounded shadow-sm" alt="Pizza Marinara">
+              <div class="gallery-overlay">
+                <h5>Pizza Marinara</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/pizza_pepperoni.jpeg" data-lightbox="galerija" data-title="Pizza Pepperoni">
+              <img src="images/pizza_pepperoni.jpeg" class="img-fluid rounded shadow-sm" alt="Pizza Pepperoni">
+              <div class="gallery-overlay">
+                <h5>Pizza Pepperoni</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/pizza_prosciutto.jpeg" data-lightbox="galerija" data-title="Pizza Prosciutto">
+              <img src="images/pizza_prosciutto.jpeg" class="img-fluid rounded shadow-sm" alt="Pizza Prosciutto">
+              <div class="gallery-overlay">
+                <h5>Pizza Prosciutto</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/pizza_vegetariana.jpeg" data-lightbox="galerija" data-title="Pizza Vegetariana">
+              <img src="images/pizza_vegetariana.jpeg" class="img-fluid rounded shadow-sm" alt="Pizza Vegetariana">
+              <div class="gallery-overlay">
+                <h5>Pizza Vegetariana</h5>
+              </div>
+            </a>
+          </div>
+        
+        <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+          <a href="images/tjestenina_lasagne.jpeg" data-lightbox="galerija" data-title="Lasagne">
+            <img src="images/tjestenina_lasagne.jpeg" class="img-fluid rounded shadow-sm" alt="Lasagne">
+            <div class="gallery-overlay">
+              <h5>Lasagne</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/tjestenina_spaghetti_carbonara.jpeg" data-lightbox="galerija" data-title="Spaghetti Carbonara">
+              <img src="images/tjestenina_spaghetti_carbonara.jpeg" class="img-fluid rounded shadow-sm" alt="Spaghetti Carbonara">
+              <div class="gallery-overlay">
+                <h5>Spaghetti Carbonara</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/tjestenina_penne_arrabiata.jpeg" data-lightbox="galerija" data-title="Penne Arrabiata">
+              <img src="images/tjestenina_penne_arrabiata.jpeg" class="img-fluid rounded shadow-sm" alt="Penne Arrabiata">
+              <div class="gallery-overlay">
+                <h5>Penne Arrabiata</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/salata_caprese.jpeg" data-lightbox="galerija" data-title="Caprese salata">
+              <img src="images/salata_caprese.jpeg" class="img-fluid rounded shadow-sm" alt="Caprese salata">
+              <div class="gallery-overlay">
+                <h5>Caprese salata</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/salata_cezar.jpeg" data-lightbox="galerija" data-title="Cezar salata">
+              <img src="images/salata_cezar.jpeg" class="img-fluid rounded shadow-sm" alt="Cezar salata">
+              <div class="gallery-overlay">
+                <h5>Cezar salata</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/salata_grcka.jpeg" data-lightbox="galerija" data-title="Grčka salata">
+              <img src="images/salata_grcka.jpeg" class="img-fluid rounded shadow-sm" alt="Grčka salata">
+              <div class="gallery-overlay">
+                <h5>Grčka salata</h5>
+              </div>
+            </a>
+          </div>
+        
+        <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+          <a href="images/desert_tiramisu.jpeg" data-lightbox="galerija" data-title="Tiramisu">
+            <img src="images/desert_tiramisu.jpeg" class="img-fluid rounded shadow-sm" alt="Tiramisu">
+            <div class="gallery-overlay">
+              <h5>Tiramisu</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/desert_cokoladni_fondant.jpeg" data-lightbox="galerija" data-title="Čokoladni fondant">
+              <img src="images/desert_cokoladni_fondant.jpeg" class="img-fluid rounded shadow-sm" alt="Čokoladni fondant">
+              <div class="gallery-overlay">
+                <h5>Čokoladni fondant</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4 gallery-item hrana">
+            <a href="images/desert_panna_cotta.jpeg" data-lightbox="galerija" data-title="Panna Cotta">
+              <img src="images/desert_panna_cotta.jpeg" class="img-fluid rounded shadow-sm" alt="Panna Cotta">
+              <div class="gallery-overlay">
+                <h5>Panna Cotta</h5>
+              </div>
+            </a>
+          </div>
+        
+        <!-- Restoran -->
+        <div class="col-md-4 col-6 mb-4 gallery-item restoran">
+          <a href="images/restoran1.jpeg" data-lightbox="galerija" data-title="Unutrašnjost našeg restorana">
+            <img src="images/restoran1.jpeg" class="img-fluid rounded shadow-sm" alt="Interijer restorana">
+            <div class="gallery-overlay">
+              <h5>Interijer</h5>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-4 col-6 mb-4 gallery-item restoran">
+          <a href="images/restoran2.jpeg" data-lightbox="galerija" data-title="Ugodan ambijent za večeru">
+            <img src="images/restoran2.jpeg" class="img-fluid rounded shadow-sm" alt="Ambijent restorana">
+            <div class="gallery-overlay">
+              <h5>Ambijent</h5>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-4 col-6 mb-4 gallery-item restoran">
+          <a href="images/pizzeria.jpg" data-lightbox="galerija" data-title="Glavni ulaz našeg restorana">
+            <img src="images/pizzeria.jpg" class="img-fluid rounded shadow-sm" alt="Glavni ulaz">
+            <div class="gallery-overlay">
+              <h5>Glavni ulaz</h5>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Događaji -->
+        <div class="col-md-4 col-6 mb-4 gallery-item dogadjaji">
+          <a href="images/dogadaj1.jpeg" data-lightbox="galerija" data-title="Radionica pravljenja pizze">
+            <img src="images/dogadaj1.jpeg" class="img-fluid rounded shadow-sm" alt="Radionica pizze">
+            <div class="gallery-overlay">
+              <h5>Radionica pizze</h5>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-4 col-6 mb-4 gallery-item dogadjaji">
+          <a href="images/dogadaj2.jpeg" data-lightbox="galerija" data-title="Obiteljsko okupljanje">
+            <img src="images/dogadaj2.jpeg" class="img-fluid rounded shadow-sm" alt="Obiteljsko okupljanje">
+            <div class="gallery-overlay">
+              <h5>Obiteljsko okupljanje</h5>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-4 col-6 mb-4 gallery-item dogadjaji">
+          <a href="images/dogadaj3.jpeg" data-lightbox="galerija" data-title="Talijanska večer - posebni događaj">
+            <img src="images/dogadaj3.jpeg" class="img-fluid rounded shadow-sm" alt="Talijanska večer">
+            <div class="gallery-overlay">
+              <h5>Talijanska večer</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA za kontakt -->
+  <section id="galerija-cta" class="py-5 bg-light">
+    <div class="container text-center">
+      <h3 class="mb-4">Želite rezervirati stol ili organizirati događaj?</h3>
+      <p class="lead mb-4">Slobodno nas kontaktirajte i dogovorite sve detalje.</p>
+      <a href="kontaktirajte-nas.html" class="btn btn-primary btn-lg">Kontaktirajte nas</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <p class="mb-0">&copy; 2025 Pizzeria Castellier. Sva prava pridržana.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!-- Custom JavaScriptu -->
+  <script>
+    $(document).ready(function() {
+
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'showImageNumberLabel': false
+      });
+
+      var $gallery = $('.gallery').isotope({
+        itemSelector: '.gallery-item',
+        layoutMode: 'fitRows'
+      });
+
+      $('.btn-group').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $gallery.isotope({ filter: filterValue });
+        
+        $('.btn-group button').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+  </script>
+</body>
+
+</html>

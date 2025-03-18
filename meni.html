@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meni - Pizzeria Castellier</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navigacija -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Pizzeria Castellier Logo" width="150" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="o-nama.html">O nama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meni.html">Meni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galerija.html">Galerija</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontaktirajte-nas.html">Kontaktirajte nas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Meni -->
+  <section id="meni" class="py-5 mt-5">
+    <div class="container">
+      <h2 class="text-center display-5 mb-5">Naš meni</h2>
+      <!-- Naš specijalitet -->
+      <div id="specijalne-pizze" class="mb-5">
+        <h3 class="text-center mb-4">Naš specijalitet</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card mb-4 special-pizza">
+              <img src="images/pizza_gramperi.jpeg" class="card-img-top" alt="Pizza Gramperi">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Gramperi</h5>
+                <p class="card-text">
+                  Tradicionalna kaštelirska pizza s domaćim istarskim krumpirom, svježim lokalnim sastojcima i našim tajnim umakom.
+                  Pravo gastronomsko blago Kaštelira koje morate probati!
+                </p>
+                <p class="card-text"><strong>Cijena: 12,50 €</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pizze -->
+      <div id="pizze" class="mb-5">
+        <h3 class="text-center mb-4">Pizze</h3>
+        <div class="row">
+          <!-- Pizza Margherita -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/pizza_margherita.jpeg" class="card-img-top" alt="Pizza Margherita">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Margherita</h5>
+                <p class="card-text">
+                  Klasična pizza s rajčicama, mozzarellom i svježim bosiljkom.
+                </p>
+                <p class="card-text"><strong>Cijena: 8,50 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Quattro Formaggi -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/pizza_quattro_formaggi.jpeg" class="card-img-top" alt="Pizza Quattro Formaggi">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Quattro Formaggi</h5>
+                <p class="card-text">
+                  Pizza s četiri vrste sira: mozzarella, gorgonzola, parmezan i ricotta.
+                </p>
+                <p class="card-text"><strong>Cijena: 10,50 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Pepperoni -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/pizza_pepperoni.jpeg" class="card-img-top" alt="Pizza Pepperoni">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Pepperoni</h5>
+                <p class="card-text">
+                  Pizza s picantom pepperoni salamon, rajčicama i mozzarellom.
+                </p>
+                <p class="card-text"><strong>Cijena: 9,50 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Vegetariana -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/pizza_vegetariana.jpeg" class="card-img-top" alt="Pizza Vegetariana">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Vegetariana</h5>
+                <p class="card-text">
+                  Pizza s povrćem: rajčice, gljive, masline i mozzarella.
+                </p>
+                <p class="card-text"><strong>Cijena: 9,00 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Capricciosa -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/pizza_capricciosa.jpeg" class="card-img-top" alt="Pizza Capricciosa">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Capricciosa</h5>
+                <p class="card-text">
+                  Pizza s šunkom, gljivama, artičokama, maslinama i mozzarellom.
+                </p>
+                <p class="card-text"><strong>Cijena: 10,00 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Diavola -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/pizza_diavola.jpeg" class="card-img-top" alt="Pizza Diavola">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Diavola</h5>
+                <p class="card-text">
+                  Pizza s picantom salamon, rajčicama i mozzarellom.
+                </p>
+                <p class="card-text"><strong>Cijena: 10,00 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Prosciutto -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/pizza_prosciutto.jpeg" class="card-img-top" alt="Pizza Prosciutto">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Prosciutto</h5>
+                <p class="card-text">
+                  Pizza s pršutom, rukolom, rajčicama i mozzarellom.
+                </p>
+                <p class="card-text"><strong>Cijena: 11,00 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Funghi -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/pizza_funghi.jpeg" class="card-img-top" alt="Pizza Funghi">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Funghi</h5>
+                <p class="card-text">
+                  Pizza s gljivama, rajčicama, mozzarellom i origanom.
+                </p>
+                <p class="card-text"><strong>Cijena: 9,00 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Marinara -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/pizza_marinara.jpeg" class="card-img-top" alt="Pizza Marinara">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Marinara</h5>
+                <p class="card-text">
+                  Pizza s rajčicama, češnjakom, origanom i maslinovim uljem.
+                </p>
+                <p class="card-text"><strong>Cijena: 9,00 €</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tjestenine -->
+      <div id="tjestenine" class="mb-5">
+        <h3 class="text-center mb-4">Tjestenine</h3>
+        <div class="row">
+          <!-- Spaghetti Carbonara -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/tjestenina_spaghetti_carbonara.jpeg" class="card-img-top" alt="Spaghetti Carbonara">
+              <div class="card-body">
+                <h5 class="card-title">Spaghetti Carbonara</h5>
+                <p class="card-text">
+                  Klasična carbonara s pancetom, jajima i parmezanom.
+                </p>
+                <p class="card-text"><strong>Cijena: 5,30 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lasagne -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/tjestenina_lasagne.jpeg" class="card-img-top" alt="Lasagne">
+              <div class="card-body">
+                <h5 class="card-title">Lasagne</h5>
+                <p class="card-text">
+                  Tradicionalne lasagne s mljevenim mesom i besamel umakom.
+                </p>
+                <p class="card-text"><strong>Cijena: 6,65 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Penne Arrabiata -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/tjestenina_penne_arrabiata.jpeg" class="card-img-top" alt="Penne Arrabiata">
+              <div class="card-body">
+                <h5 class="card-title">Penne Arrabiata</h5>
+                <p class="card-text">
+                  Penne tjestenina s ljutim umakom od rajčice i češnjaka.
+                </p>
+                <p class="card-text"><strong>Cijena: 4,65 €</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salate -->
+      <div id="salate" class="mb-5">
+        <h3 class="text-center mb-4">Salate</h3>
+        <div class="row">
+          <!-- Caprese salata -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/salata_caprese.jpeg" class="card-img-top" alt="Caprese salata">
+              <div class="card-body">
+                <h5 class="card-title">Caprese salata</h5>
+                <p class="card-text">
+                  Svježa salata s rajčicama, mozzarellom i bosiljkom.
+                </p>
+                <p class="card-text"><strong>Cijena: 4,00 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cezar salata -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/salata_cezar.jpeg" class="card-img-top" alt="Cezar salata">
+              <div class="card-body">
+                <h5 class="card-title">Cezar salata</h5>
+                <p class="card-text">
+                  Klasična Cezar salata s piletinom, krutonima i parmezanom.
+                </p>
+                <p class="card-text"><strong>Cijena: 4,65 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grčka salata -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/salata_grcka.jpeg" class="card-img-top" alt="Grčka salata">
+              <div class="card-body">
+                <h5 class="card-title">Grčka salata</h5>
+                <p class="card-text">
+                  Salata s rajčicama, krastavcima, crvenim lukom i feta sirom.
+                </p>
+                <p class="card-text"><strong>Cijena: 4,00 €</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deserti -->
+      <div id="deserti" class="mb-5">
+        <h3 class="text-center mb-4">Deserti</h3>
+        <div class="row">
+          <!-- Tiramisu -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/desert_tiramisu.jpeg" class="card-img-top" alt="Tiramisu">
+              <div class="card-body">
+                <h5 class="card-title">Tiramisu</h5>
+                <p class="card-text">
+                  Klasični talijanski desert s kavom, mascarpone sirom i kakaom.
+                </p>
+                <p class="card-text"><strong>Cijena: 3,30 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panna Cotta -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/desert_panna_cotta.jpeg" class="card-img-top" alt="Panna Cotta">
+              <div class="card-body">
+                <h5 class="card-title">Panna Cotta</h5>
+                <p class="card-text">
+                  Kremasti desert s vanilijom i voćnim preljevom.
+                </p>
+                <p class="card-text"><strong>Cijena: 2,65 €</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Čokoladni fondant -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/desert_cokoladni_fondant.jpeg" class="card-img-top" alt="Čokoladni fondant">
+              <div class="card-body">
+                <h5 class="card-title">Čokoladni fondant</h5>
+                <p class="card-text">
+                  Topljeni čokoladni desert s sladoledom.
+                </p>
+                <p class="card-text"><strong>Cijena: 4,00 €</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <p class="mb-0">&copy; 2025 Pizzeria Castellier. Sva prava pridržana.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
